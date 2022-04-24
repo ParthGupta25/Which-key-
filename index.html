@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://c.tenor.com/G1VOo6fVsn4AAAAC/keyboard-type.gif");
+        }
+        
+        div {
+            font-size: 18;
+            font-weight: bold;
+        }
+        
+        #myCanvas {
+            margin-top: 10px;
+            border-width: 40px;
+            background-color: white;
+            border-style: ridge;
+            text-align: center;
+        }
+        
+        h1,
+        h4 {
+            color: red!important;
+        }
+        
+        h3 {
+            color: blue;
+        }
+        
+        #item:hover {
+            background-color: dodgerblue;
+        }
+        
+        #menu {
+            cursor: pointer;
+            color: black;
+            list-style: none;
+            font-family: 'Carattere', cursive;
+            font-size: 15px;
+            z-index: 4;
+            right: 15px;
+            top: 10px;
+            position: fixed;
+        }
+        
+        #item {
+            float: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>ASCII value</title>
+</head>
+
+<body>
+
+    <center>
+        <ul id="menu">
+            <li id="item"><a href="http://sticksandstones.kstrom.com/appen.html">Aplherbets</a></li>
+            <li id="item"><a href="https://www.geeksforgeeks.org/program-to-print-ascii-value-of-all-digits-of-a-given-number/"> Numbers</a></li>
+            <li id="item"><a href="https://scriptinghelpers.org/questions/8688/what-are-the-ascii-values-for-arrow-keyss">Arrows</a></li>
+            <li id="item"><a href="https://www.c-sharpcorner.com/blogs/ascii-key-code-value1">specials</a></li>
+            <li id="item"><a href="https://www.w3schools.com/charsets/ref_html_ascii.asp#:~:text=The%20ASCII%20Character%20Set&text=ASCII%20is%20a%207%2Dbit,are%20all%20based%20on%20ASCII.">other</a></li>
+        </ul>
+        <h1>Keyboard keys</h1>
+        <canvas id="myCanvas" width="800" height="600">
+</canvas>
+        <div id="d1"></div>
+        <h4>
+            <b class="text-danger">NOTE : </b> PRESS ANY KEYBOARD KEY
+        </h4>
+        <h4>
+            <b class="text-danger">NOTE : </b> REFRESH IF SCREEN STUCK
+        </h4>
+        <iframe src="https://codepen.io/Parth25/full/MWrdbay" width="800" height="600"></iframe>
+        <h3>Play the mini game</h3>
+    </center>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
